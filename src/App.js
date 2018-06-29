@@ -16,14 +16,10 @@ class App extends Component {
         </header>
         <div className="vertical-section-container centered">
           <h3>Basic icon-toggle demo</h3>
-          <demo-snippet>
+          <div className="demo">
             <icon-toggle toggle-icon="star"></icon-toggle>
             <icon-toggle toggle-icon="favorite" pressed></icon-toggle>
-            <template>
-              <icon-toggle toggle-icon="star"></icon-toggle>
-              <icon-toggle toggle-icon="favorite" pressed></icon-toggle>
-            </template>
-          </demo-snippet>
+          </div>
         </div>
       </div>
     );
