@@ -1,16 +1,33 @@
 {
   "name": "kse-react-project",
-  "version": "0.1.0",
+  "version": "0.0.1",
+  "description": "kse-react-project",
   "private": true,
-  "dependencies": {
-    "react": "^16.4.1",
-    "react-dom": "^16.4.1",
-    "react-scripts": "1.1.4"
-  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
-  }
+  },
+  "dependencies": {
+    "growl": "^1.10.5",
+    "kse-common-ui": "0.0.2",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-scripts": "1.1.4"
+  },
+  "devDependencies": {
+    "@polymer/iron-demo-helpers": "^3.0.0-pre.21",
+    "wct-browser-legacy": "^1.0.0"
+  },
+  "authors": [
+    "Scania",
+    "Mohammed Ayowa <mohammed.ayowa@scania.com> (mohammed.ayowa@scania.com)",
+    "Hermann Fomekong <hermann.fomekong@scania.com> (hermann.fomekong@scania.com)"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/github.com/mohammed-softordi/kse-react-project.git"
+  },
+  "homepage": "https://github.com/mohammed-softordi/kse-react-project"
 }
