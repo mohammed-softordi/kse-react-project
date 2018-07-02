@@ -1,10 +1,14 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import '@webcomponents/webcomponentsjs/webcomponents-loader.js'
+//import '@webcomponents/webcomponentsjs/webcomponents-loader';
+import '@webcomponents/webcomponentsjs/webcomponents-bundle';
+import '@polymer/polymer/polymer-element';
+import '@webcomponents/shadycss/apply-shim.min';
 import '@polymer/iron-demo-helpers/demo-pages-shared-styles';
 import '@polymer/iron-demo-helpers/demo-snippet';
-import 'kse-common-ui/icon-toggle'
+import 'kse-common-ui/icon-toggle';
+
 
 class App extends Component {
   render() {

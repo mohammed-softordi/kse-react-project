@@ -24,6 +24,12 @@
       <style is="custom-style" include="demo-pages-shared-styles">
       </style>
     </custom-style>
+    <script>
+      // Force all polyfills on
+      if (window.customElements) window.customElements.forcePolyfill = true;
+      ShadyDOM = { force: true };
+      ShadyCSS = { shimcssproperties: true};
+    </script>
   </head>
   <body>
     <noscript>
