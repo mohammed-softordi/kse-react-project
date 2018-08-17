@@ -8,26 +8,22 @@ export default class KsSearchComponent extends Component {
 
   constructor(props) {
     super(props);
-
     this.state = {
       inputValue : 'React demo '
     };
-
-    // Events Binding
-    this.handleKsChange =  this.handleKsChange.bind(this);
-    this.handleKsCustomEv =  this.handleKsCustomEv.bind(this);
   }
 
   componentDidMount() {
 
+    // Binding events
     // When the component is mounted, add your DOM listener to the "ks" element.
     // (The "ks" element is assigned in the render function.)
     
     // - Polymer documentation Data system: https://www.polymer-project.org/3.0/docs/devguide/data-system#paths
-    this.ks.addEventListener('value-changed', this.handleKsChange); // This event will be triggered when the property "value" changes 
+    this.ks.addEventListener('value-changed', this.handleKsChange.bind(this)); // This event will be triggered when the property "value" changes 
     
     // - Polymer documentation Events: https://www.polymer-project.org/3.0/docs/devguide/events
-    this.ks.addEventListener('custom-ev', this.handleKsCustomEv);
+    this.ks.addEventListener('custom-ev', this.handleKsCustomEv.bind(this));
   }
 
   componentWillUnmount() {
