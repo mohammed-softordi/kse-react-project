@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "growl": "^1.10.5",
-    "kse-common-ui": "0.0.4",
+    "kse-common-ui": "0.0.5",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-scripts": "1.1.4"
